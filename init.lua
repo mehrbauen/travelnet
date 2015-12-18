@@ -623,10 +623,10 @@ travelnet.can_dig = function( pos, player, description )
       minetest.chat_send_player(name, "This "..description.." has not been configured yet. Please set it up first to claim it. Afterwards you can remove it because you are then the owner.");
       return false;
 
-   elseif( owner ~= name ) then
-      minetest.chat_send_player(name, "This "..description.." belongs to "..tostring( meta:get_string('owner'))..". You can't remove it.");
-      return false;
-   end
+--   elseif( owner ~= name ) then
+--      minetest.chat_send_player(name, "This "..description.." belongs to "..tostring( meta:get_string('owner'))..". You can't remove it.");
+--      return false;
+--   end
    return true;
 end
 
