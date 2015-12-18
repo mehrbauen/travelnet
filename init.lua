@@ -626,7 +626,7 @@ travelnet.can_dig = function( pos, player, description )
 --   elseif( owner ~= name ) then
 --      minetest.chat_send_player(name, "This "..description.." belongs to "..tostring( meta:get_string('owner'))..". You can't remove it.");
 --      return false;
---   end
+   end
    return true;
 end
 
